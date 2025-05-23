@@ -5,7 +5,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/FVSB?style=social)](https://github.com/FVSB)
 [![GitHub stars](https://img.shields.io/github/stars/FVSB?style=social)](https://github.com/FVSB)
 
-**🎓 Computer Science Student | 🔬 Optimization Researcher | 💻 Full-Stack Developer**
+**🎓 BSc. Computer Science | 🔬 Optimization Researcher | 💻 Full-Stack Developer**
 
 </div>
 
@@ -13,7 +13,7 @@
 
 ## 🚀 About Me
 
-I'm a passionate **computer scientist** specializing in **bilevel optimization** and **web development**. Currently studying at the University of Havana and working as a researcher on national science projects.
+I'm a passionate **computer scientist** with a degree from the University of Havana, specializing in **bilevel optimization** and **web development**. Currently working as a researcher on national science projects.
 
 - 🔭 Currently working on: **Bilevel optimization applied to water resource management**
 - 🌱 Learning: **Advanced Machine Learning and LLMs**
