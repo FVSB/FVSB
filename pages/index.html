@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Vicente Suárez Bellón - Software Developer</title>
+    <meta name="description" content="Computer Science student and Software Developer specializing in web development, Python, and data science.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --accent-color: #3b82f6;
+            --border-color: #e5e7eb;
+            --card-bg: #f9fafb;
+            --hover-bg: #f3f4f6;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-color: #60a5fa;
+            --border-color: #334155;
+            --card-bg: #1e293b;
+            --hover-bg: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .controls {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .theme-toggle, .lang-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover, .lang-toggle:hover {
+            background: var(--hover-bg);
+            transform: translateY(-1px);
+        }
+
+        .profile-section {
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        .experience-item, .project-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .experience-item:hover, .project-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        [data-theme="dark"] .experience-item:hover,
+        [data-theme="dark"] .project-item:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .job-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .company {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .period {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .skill-category h4 {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .education-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .institution {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .controls {
+                position: static;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+
+            .contact-links {
+                gap: 1rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="controls">
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+                <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+            </div>
+            
+            <div class="profile-section">
+                <h1 class="name">Francisco Vicente Suárez Bellón</h1>
+                <p class="title" data-es="Desarrollador de Software" data-en="Software Developer ">Desarrollador de Software</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:franciscosuarezbellon@gmail.com" class="contact-link">
+                        📧 franciscosuarezbellon@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/fvsb" target="_blank" class="contact-link">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/FVSB" target="_blank" class="contact-link">
+                        🔗 GitHub
+                    </a>
+                    <a href="tel:+34697740914" class="contact-link">
+                        📱 +34 697740914
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Spanish Content -->
+            <div id="content-es">
+                <section class="section">
+                    <h2 class="section-title">Experiencia</h2>
+                    
+                    <div class="experience-item">
+                        <div class="company">Universidad de La Habana</div>
+                        <div class="job-title">Desarrollador Full-Stack</div>
+                        <div class="period">2024 - 2025</div>
+                        <div class="description">
+                            Desarrollé una plataforma modular y escalable para gestión unificada de documentos (Django - Next.js). 
+                            Automaticé la administración de documentos digitales con búsqueda en lenguaje natural (LLMs - RAG), 
+                            automatización de formularios y análisis estadístico. Reduje las tareas humanas hasta en un 90%.
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="company">Universidad de La Habana</div>
+                        <div class="job-title">Desarrollador de Software & Investigador</div>
+                        <div class="period">2022 - presente</div>
+                        <div class="description">
+                            Optimización de procesos empresariales usando Pyomo (Python) y JuMP (Julia). 
+                            Desarrollé sistemas cliente-servidor con Django y React (Next.js). 
+                            Reduje costos operativos en más del 13% y aumenté la rentabilidad en más del 22% 
+                            mediante automatización y asignación inteligente de recursos.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Proyectos</h2>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">CaribesUH</h3>
+                        <div class="description">
+                            Plataforma web para seguimiento en tiempo real de eventos deportivos universitarios. 
+                            Incluye seguimiento en vivo, sistema de administración, foros de comentarios moderados 
+                            y sección de noticias con visualización y análisis de datos deportivos en tiempo real.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">SafeCross</h3>
+                        <div class="description">
+                            Sistema de asistencia para cruce seguro de calles para personas con discapacidad visual 
+                            sin conectividad a internet. Proporciona orientación y asistencia en tiempo real durante 
+                            los cruces de calles, priorizando la accesibilidad e independencia del usuario.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Educación</h2>
+                    
+                    <div class="education-item">
+                        <div class="institution">Universidad de La Habana</div>
+                        <div class="degree">Licenciatura en Ciencias de la Computación</div>
+                        <div class="period">2021 - 2025</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="institution">Universidad Complutense de Madrid</div>
+                        <div class="degree">Introducción a la Ciencia de Datos</div>
+                        <div class="period">2024</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Habilidades</h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Lenguajes</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">C#</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">.NET</span>
+                                <span class="skill-tag">React</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Bases de Datos</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Elasticsearch</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Herramientas</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="hidden">
+                <section class="section">
+                    <h2 class="section-title">Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="company">University of Havana</div>
+                        <div class="job-title">Full-Stack Developer</div>
+                        <div class="period">2024 - 2025</div>
+                        <div class="description">
+                            Developed modular and scalable platform for unified document management (Django - Next.js). 
+                            Automated digital document administration with natural language search (LLMs - RAG), 
+                            form automation, and statistical analysis. Reduced human tasks by up to 90%.
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="company">University of Havana</div>
+                        <div class="job-title">Software Developer & Researcher</div>
+                        <div class="period">2022 - present</div>
+                        <div class="description">
+                            Business process optimization using Pyomo (Python) and JuMP (Julia). 
+                            Developed client-server systems with Django and React (Next.js). 
+                            Reduced operational costs by over 13% and increased profitability by over 22% 
+                            through automation and intelligent resource allocation.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Projects</h2>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">CaribesUH</h3>
+                        <div class="description">
+                            Web platform for real-time tracking of university sports events. Features include 
+                            live tracking, administration system, moderated comment forums, and news section. 
+                            Enables visualization and analysis of sports data in real time.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">SafeCross</h3>
+                        <div class="description">
+                            Assistance system for safe street crossing for visually impaired individuals without 
+                            internet connectivity. Provides real-time guidance and assistance during street crossings, 
+                            prioritizing user accessibility and independence.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="education-item">
+                        <div class="institution">University of Havana</div>
+                        <div class="degree">Bachelor of Science in Computer Science</div>
+                        <div class="period">2021 - 2025</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="institution">Complutense University of Madrid</div>
+                        <div class="degree">Introduction to Data Science</div>
+                        <div class="period">2024</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Skills</h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">C#</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">.NET</span>
+                                <span class="skill-tag">React</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Elasticsearch</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let currentLang = 'es';
+        let currentTheme = 'light';
+
+        function setLanguage(lang) {
+            const esContent = document.getElementById('content-es');
+            const enContent = document.getElementById('content-en');
+            const langButton = document.querySelector('.lang-toggle');
+            const title = document.querySelector('.title');
+
+            if (lang === 'es') {
+                enContent.classList.add('hidden');
+                esContent.classList.remove('hidden');
+                langButton.textContent = 'EN';
+                title.textContent = title.getAttribute('data-es');
+                document.documentElement.lang = 'es';
+                currentLang = 'es';
+            } else {
+                esContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                langButton.textContent = 'ES';
+                title.textContent = title.getAttribute('data-en');
+                document.documentElement.lang = 'en';
+                currentLang = 'en';
+            }
+        }
+
+        function toggleLanguage() {
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            setLanguage(newLang);
+            localStorage.setItem('preferred-language', newLang);
+        }
+
+        function toggleTheme() {
+            const themeButton = document.querySelector('.theme-toggle');
+            
+            if (currentTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeButton.textContent = '☀️';
+                currentTheme = 'dark';
+                localStorage.setItem('preferred-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                themeButton.textContent = '🌙';
+                currentTheme = 'light';
+                localStorage.setItem('preferred-theme', 'light');
+            }
+        }
+
+        function detectUserLanguage() {
+            // Check for saved preference first
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang) {
+                return savedLang;
+            }
+
+            // Get browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            
+            // Check if browser language starts with 'es' (Spanish)
+            if (browserLang.toLowerCase().startsWith('es')) {
+                return 'es';
+            }
+            
+            // Default to English for all other languages
+            return 'en';
+        }
+
+        function detectUserTheme() {
+            // Check for saved preference first
+            const savedTheme = localStorage.getItem('preferred-theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+
+            // Check system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            
+            return 'light';
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set language based on detection
+            const detectedLang = detectUserLanguage();
+            setLanguage(detectedLang);
+
+            // Set theme based on detection
+            const detectedTheme = detectUserTheme();
+            if (detectedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('.theme-toggle').textContent = '☀️';
+                currentTheme = 'dark';
+            }
+        });
+
+        // Listen for system theme changes
+        if (window.matchMedia) {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                // Only auto-switch if user hasn't manually set a preference
+                if (!localStorage.getItem('preferred-theme')) {
+                    if (e.matches && currentTheme === 'light') {
+                        toggleTheme();
+                    } else if (!e.matches && currentTheme === 'dark') {
+                        toggleTheme();
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
