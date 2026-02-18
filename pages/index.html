@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Vicente Suárez Bellón - Software Developer</title>
-    <meta name="description" content="Computer Science student and Software Developer specializing in web development, Python, and data science.">
+    <title>Francisco Vicente Suárez Bellón - AI-ML Software Engineer</title>
+    <meta name="description" content="AI-ML Software Engineer specializing in LLMs, RAG systems, computer vision, and Spec Driven Development.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -230,6 +230,26 @@
             margin-bottom: 0.25rem;
         }
 
+        .approach-box {
+            background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.08));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .approach-box h4 {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .approach-box p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
         .hidden {
             display: none;
         }
@@ -269,7 +289,7 @@
             
             <div class="profile-section">
                 <h1 class="name">Francisco Vicente Suárez Bellón</h1>
-                <p class="title" data-es="Desarrollador de Software" data-en="Software Developer">Desarrollador de Software</p>
+                <p class="title" data-es="Ingeniero de Software AI-ML · Spec Driven Development" data-en="AI-ML Software Engineer · Spec Driven Development">Ingeniero de Software AI-ML · Spec Driven Development</p>
                 
                 <div class="contact-links">
                     <a href="mailto:franciscosuarezbellon@gmail.com" class="contact-link">
@@ -296,24 +316,25 @@
                     
                     <div class="experience-item">
                         <div class="company">Universidad de La Habana</div>
-                        <div class="job-title">Desarrollador Full-Stack</div>
+                        <div class="job-title">AI-ML Software Engineer</div>
                         <div class="period">2024 - 2025</div>
                         <div class="description">
-                            Desarrollé una plataforma modular y escalable para gestión unificada de documentos (Django - Next.js). 
-                            Automaticé la administración de documentos digitales con búsqueda en lenguaje natural (LLMs - RAG), 
-                            automatización de formularios y análisis estadístico. Reduje las tareas humanas hasta en un 90%.
+                            Diseñé e implementé un sistema de IA para gestión documental usando LLMs y RAG (Retrieval-Augmented Generation),
+                            con búsqueda semántica en lenguaje natural. Apliqué Spec Driven Development para definir contratos de API
+                            antes de la implementación, lo que aceleró la integración entre servicios Django y Next.js.
+                            Automaticé flujos de trabajo reduciendo tareas humanas en un 90%.
                         </div>
                     </div>
-                    
+
                     <div class="experience-item">
                         <div class="company">Universidad de La Habana</div>
-                        <div class="job-title">Desarrollador de Software & Investigador</div>
+                        <div class="job-title">Investigador en IA & Optimización</div>
                         <div class="period">2022 - presente</div>
                         <div class="description">
-                            Optimización de procesos empresariales usando Pyomo (Python) y JuMP (Julia). 
-                            Desarrollé sistemas cliente-servidor con Django y React (Next.js). 
-                            Reduje costos operativos en más del 13% y aumenté la rentabilidad en más del 22% 
-                            mediante automatización y asignación inteligente de recursos.
+                            Investigación en optimización inteligente de recursos con modelos de ML y algoritmos de optimización
+                            (Pyomo, JuMP). Desarrollé sistemas de toma de decisiones automatizados que redujeron costos
+                            operativos en más del 13% y aumentaron la rentabilidad en más del 22% mediante
+                            asignación inteligente de recursos basada en modelos predictivos.
                         </div>
                     </div>
                 </section>
@@ -322,20 +343,30 @@
                     <h2 class="section-title">Proyectos</h2>
                     
                     <div class="project-item">
-                        <h3 class="job-title">CaribesUH</h3>
-                        <div class="description">
-                            Plataforma web para seguimiento en tiempo real de eventos deportivos universitarios. 
-                            Incluye seguimiento en vivo, sistema de administración, foros de comentarios moderados 
-                            y sección de noticias con visualización y análisis de datos deportivos en tiempo real.
-                        </div>
-                    </div>
-                    
-                    <div class="project-item">
                         <h3 class="job-title">SafeCross</h3>
                         <div class="description">
-                            Sistema de asistencia para cruce seguro de calles para personas con discapacidad visual 
-                            sin conectividad a internet. Proporciona orientación y asistencia en tiempo real durante 
-                            los cruces de calles, priorizando la accesibilidad e independencia del usuario.
+                            Sistema de visión por computadora para asistencia en cruces de calles para personas con discapacidad visual,
+                            sin dependencia de conectividad a internet. Combina detección de objetos en tiempo real con síntesis de voz
+                            para guiar al usuario de forma segura e independiente, priorizando robustez en edge devices.
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="job-title">CaribesUH</h3>
+                        <div class="description">
+                            Plataforma web para seguimiento en tiempo real de eventos deportivos universitarios,
+                            con análisis estadístico automático de datos deportivos. Arquitectura diseñada
+                            mediante Spec Driven Development, garantizando contratos claros entre el backend
+                            (.NET) y el frontend antes de la implementación.
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="job-title">BilevelGen</h3>
+                        <div class="description">
+                            Librería en Julia para generación de problemas de prueba con puntos estacionarios conocidos,
+                            orientada al benchmarking de algoritmos de optimización bilineal. Usada en investigación
+                            de toma de decisiones aplicada a gestión de recursos en eco-parques.
                         </div>
                     </div>
                 </section>
@@ -354,45 +385,94 @@
                         <div class="degree">Introducción a la Ciencia de Datos</div>
                         <div class="period">2024</div>
                     </div>
+
+                    
+
+
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Enfoque</h2>
+
+                    <div class="approach-box">
+                        <h4>Spec Driven Development</h4>
+                        <p>
+                            Defiendo el desarrollo guiado por especificaciones: antes de escribir una sola línea de código,
+                            defino contratos claros (OpenAPI, JSON Schema, ADRs) que sirven como fuente de verdad para todos
+                            los componentes del sistema. Esto reduce la ambigüedad, acelera la integración entre equipos y
+                            permite generar tests, mocks y documentación automáticamente desde la especificación.
+                        </p>
+                    </div>
+
+                    <div class="approach-box">
+                        <h4>AI-First Engineering</h4>
+                        <p>
+                            Diseño sistemas donde la IA no es un add-on, sino parte central de la arquitectura.
+                            Trabajo con LLMs, pipelines RAG y modelos de visión por computadora priorizando
+                            la observabilidad, el control de calidad de las salidas y la eficiencia en inferencia.
+                        </p>
+                    </div>
                 </section>
 
                 <section class="section">
                     <h2 class="section-title">Habilidades</h2>
-                    
+
                     <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>AI & ML</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">scikit-learn</span>
+                                <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">Ultralytics</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>LLMs & RAG</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">LangChain</span>
+                                <span class="skill-tag">RAG</span>
+                                <span class="skill-tag">OpenAI</span>
+                                <span class="skill-tag">Claude</span>
+                                <span class="skill-tag">Ollama</span>
+                            </div>
+                        </div>
+
                         <div class="skill-category">
                             <h4>Lenguajes</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Julia</span>
                                 <span class="skill-tag">SQL</span>
                                 <span class="skill-tag">C#</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Frameworks</h4>
+                            <h4>Backend & APIs</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Django</span>
                                 <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">OpenAPI</span>
                                 <span class="skill-tag">.NET</span>
-                                <span class="skill-tag">React</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Bases de Datos</h4>
+                            <h4>Datos</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">MongoDB</span>
                                 <span class="skill-tag">Elasticsearch</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Pandas</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Herramientas</h4>
+                            <h4>DevOps & Cloud</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Kubernetes</span>
@@ -411,24 +491,26 @@
                     
                     <div class="experience-item">
                         <div class="company">University of Havana</div>
-                        <div class="job-title">Full-Stack Developer</div>
+                        <div class="job-title">AI-ML Software Engineer</div>
                         <div class="period">2024 - 2025</div>
                         <div class="description">
-                            Developed modular and scalable platform for unified document management (Django - Next.js). 
-                            Automated digital document administration with natural language search (LLMs - RAG), 
-                            form automation, and statistical analysis. Reduced human tasks by up to 90%.
+                            Designed and implemented an AI-powered document management system using LLMs and
+                            RAG (Retrieval-Augmented Generation) with semantic natural language search.
+                            Applied Spec Driven Development to define API contracts before implementation,
+                            accelerating integration between Django and Next.js services.
+                            Automated workflows reducing human tasks by up to 90%.
                         </div>
                     </div>
-                    
+
                     <div class="experience-item">
                         <div class="company">University of Havana</div>
-                        <div class="job-title">Software Developer & Researcher</div>
+                        <div class="job-title">AI Researcher & Software Engineer</div>
                         <div class="period">2022 - present</div>
                         <div class="description">
-                            Business process optimization using Pyomo (Python) and JuMP (Julia). 
-                            Developed client-server systems with Django and React (Next.js). 
-                            Reduced operational costs by over 13% and increased profitability by over 22% 
-                            through automation and intelligent resource allocation.
+                            Research on intelligent resource optimization using ML models and optimization
+                            algorithms (Pyomo, JuMP). Developed automated decision-making systems that reduced
+                            operational costs by over 13% and increased profitability by over 22% through
+                            predictive model-based intelligent resource allocation.
                         </div>
                     </div>
                 </section>
@@ -437,20 +519,29 @@
                     <h2 class="section-title">Projects</h2>
                     
                     <div class="project-item">
-                        <h3 class="job-title">CaribesUH</h3>
-                        <div class="description">
-                            Web platform for real-time tracking of university sports events. Features include 
-                            live tracking, administration system, moderated comment forums, and news section. 
-                            Enables visualization and analysis of sports data in real time.
-                        </div>
-                    </div>
-                    
-                    <div class="project-item">
                         <h3 class="job-title">SafeCross</h3>
                         <div class="description">
-                            Assistance system for safe street crossing for visually impaired individuals without 
-                            internet connectivity. Provides real-time guidance and assistance during street crossings, 
-                            prioritizing user accessibility and independence.
+                            Computer vision system for safe street crossing assistance for visually impaired individuals,
+                            fully offline without internet dependency. Combines real-time object detection with text-to-speech
+                            to guide users safely and independently, optimized for robustness on edge devices.
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="job-title">CaribesUH</h3>
+                        <div class="description">
+                            Real-time web platform for university sports event tracking with automatic statistical
+                            analysis of sports data. Architecture designed using Spec Driven Development,
+                            ensuring clear contracts between the .NET backend and frontend before implementation.
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="job-title">BilevelGen</h3>
+                        <div class="description">
+                            Julia library for generating test problems with known stationary points,
+                            used for benchmarking bilevel optimization algorithms. Applied in research
+                            on decision-making for resource management in eco-parks.
                         </div>
                     </div>
                 </section>
@@ -472,42 +563,87 @@
                 </section>
 
                 <section class="section">
+                    <h2 class="section-title">Approach</h2>
+
+                    <div class="approach-box">
+                        <h4>Spec Driven Development</h4>
+                        <p>
+                            I advocate for specification-driven development: before writing a single line of code,
+                            I define clear contracts (OpenAPI, JSON Schema, ADRs) that serve as the source of truth
+                            for all system components. This reduces ambiguity, speeds up cross-team integration,
+                            and enables automatic generation of tests, mocks, and documentation from the spec.
+                        </p>
+                    </div>
+
+                    <div class="approach-box">
+                        <h4>AI-First Engineering</h4>
+                        <p>
+                            I design systems where AI is not an add-on but a core architectural component.
+                            I work with LLMs, RAG pipelines, and computer vision models prioritizing
+                            observability, output quality control, and inference efficiency.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
                     <h2 class="section-title">Skills</h2>
-                    
+
                     <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>AI & ML</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">scikit-learn</span>
+                                <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">Ultralytics</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>LLMs & RAG</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">LangChain</span>
+                                <span class="skill-tag">RAG</span>
+                                <span class="skill-tag">OpenAI</span>
+                                <span class="skill-tag">Claude</span>
+                                <span class="skill-tag">Ollama</span>
+                            </div>
+                        </div>
+
                         <div class="skill-category">
                             <h4>Languages</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Julia</span>
                                 <span class="skill-tag">SQL</span>
                                 <span class="skill-tag">C#</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Frameworks</h4>
+                            <h4>Backend & APIs</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Django</span>
                                 <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">OpenAPI</span>
                                 <span class="skill-tag">.NET</span>
-                                <span class="skill-tag">React</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Databases</h4>
+                            <h4>Data</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">MongoDB</span>
                                 <span class="skill-tag">Elasticsearch</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Pandas</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
-                            <h4>Tools</h4>
+                            <h4>DevOps & Cloud</h4>
                             <div class="skill-tags">
                                 <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Kubernetes</span>
