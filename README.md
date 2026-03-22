@@ -1,177 +1,86 @@
-# Hello! 👋 I'm Francisco Vicente Suárez Bellón
+# Hi, I'm Francisco Vicente Suárez Bellón 👋
 
-<div align="center">
-  
-[![GitHub followers](https://img.shields.io/github/followers/FVSB?style=social)](https://github.com/FVSB)
-[![GitHub stars](https://img.shields.io/github/stars/FVSB?style=social)](https://github.com/FVSB)
+### Senior AI Engineer | Multi-Agent Systems · LLMs · RAG · Optimization
 
-**🎓 BSc. Computer Science | 🔬 Optimization Researcher | 💻 AI-Engineer**
+I design and build production-ready AI systems, with a focus on **multi-agent applications**. I’m particularly interested in how specialized agents can collaborate to break down complex tasks, use tools and data, and coordinate multi-step workflows. My work and interests also include LLM orchestration, RAG, evaluation, and the engineering practices needed to make these systems reliable in production. I enjoy applying machine learning and mathematical optimization to real-world challenges, especially in energy and fleet operations.
 
-</div>
+## Interests
 
----
+- 🤖 LLM applications, agent orchestration, and retrieval-augmented generation (RAG)
+- 📊 Machine learning, model evaluation, and MLOps
+- ⚡ Mathematical optimization and decision support
+- 🌱 Energy efficiency, sustainability, and fleet optimization
+- 🏗️ Scalable backend systems and data-intensive applications
 
-## 🚀 About Me
+## Technologies
 
-I'm a passionate **computer scientist** with a degree from the University of Havana, specializing in **bilevel optimization** and **web development**. Currently working as a researcher on national science projects.
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![C%23](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Julia](https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
 
-- 🔭 Currently working on: **Bilevel optimization applied to water resource management**
-- 🌱 Learning: **Advanced Machine Learning and LLMs**
-- 👨‍🏫 Teaching Assistant in **Programming and Database Management Systems**
-- 🏗️ IT Systems Administrator at University of Havana
-- 🎯 Aspiring **AI Engineer**
+### AI, LLMs & data
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge)
+![Amazon Bedrock](https://img.shields.io/badge/Amazon_Bedrock-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-6A5ACD?style=for-the-badge)
+![MCP](https://img.shields.io/badge/MCP-555555?style=for-the-badge)
+![RAGAS](https://img.shields.io/badge/RAGAS-00897B?style=for-the-badge)
+![Amazon SageMaker](https://img.shields.io/badge/Amazon_SageMaker-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Polars](https://img.shields.io/badge/Polars-CD792C?style=for-the-badge)
 
----
+### Backend, databases & infrastructure
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
 
-## 🛠️ Tech Stack
+### Frontend
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
-### Programming Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" alt="Julia"/>
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/>
-</p>
-
-### Frameworks & Technologies
-<p align="left">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"/>
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-</p>
-
-### Tools & Services
-<p align="left">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white" alt="Apache"/>
-  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
-  <img src="https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white" alt="Proxmox"/>
-</p>
-
----
-
-## 🎓 Academic Courses & Specializations
-
-### 📚 **Machine Learning** 🤖
-<p align="left">
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Ultralytics-000000?style=for-the-badge&logo=yolo&logoColor=white" alt="Ultralytics"/>
-</p>
-
-### 🧠 **LLM & Chatbot Applications**
-<p align="left">
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI GPT"/>
-  <img src="https://img.shields.io/badge/Claude-FF9A00?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude"/>
-  <img src="https://img.shields.io/badge/Llama-2563EB?style=for-the-badge&logo=meta&logoColor=white" alt="Llama"/>
-  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"/>
-  <img src="https://img.shields.io/badge/LM%20Studio-4A90E2?style=for-the-badge&logo=lmstudio&logoColor=white" alt="LM Studio"/>
-</p>
-
-### 📊 **Data Science**
-<p align="left">
-  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
-</p>
-
-### ⚡ **Optimization for Data Analysis (2025)**
-<p align="left">
-  <img src="https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" alt="Julia"/>
-  <img src="https://img.shields.io/badge/JuMP-389826?style=for-the-badge&logo=julia&logoColor=white" alt="JuMP"/>
-  <img src="https://img.shields.io/badge/PuLP-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="PuLP"/>
-  <img src="https://img.shields.io/badge/Pyomo-FF6B35?style=for-the-badge&logo=python&logoColor=white" alt="Pyomo"/>
-</p>
-
----
-
-## 🔬 Research & Featured Projects
-
-### 🏆 **National Science Project PN223LH010-049**
-**Optimization and Decision-Making for Industry**
-- Implementation of bilevel optimization methods for recycled water management in eco-parks
-- Development of simulations for management-company interactions
-- Stack: Python (PuLP, Pyomo, NumPy, SymPy), Julia (JuMP, BilevelJuMP), Next.js
-
-### 📚 **BilevelGen** - Julia Library
-Generator of test problems with known stationary points for benchmarking bilevel optimization algorithms.
-
-### 🏃‍♂️ **CaribesUH** - Real-time Web Platform
-University sports event tracking system with .NET backend and PostgreSQL.
-
-### 👁️ **SafeCross** - AI Assistant
-Assistant system for visually impaired pedestrians using computer vision.
-
-### 🌐 **InfoChord** - Distributed System
-Information retrieval system built on Chord P2P protocol, enhanced with AI features.
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=FVSB&show_icons=true&theme=tokyonight&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FVSB&layout=compact&theme=tokyonight"/>
-</div>
-
----
-
-## 🎯 Areas of Expertise
+## Areas of Interest
 
 ```mermaid
 mindmap
   root((Francisco))
-    **Optimization**
-      Bilevel Optimization
-      Nash Equilibrium
-      Decision Making
-    **Web Development**
-      Full-Stack Development
-      Real-time Systems
-      API Design
-    **Data Science**
-      Machine Learning
-      Deep Learning
-      Data Analysis
-    **Systems**
-      Network Administration
-      Virtualization
-      Cloud Computing
+    AI & LLMs
+      Agent orchestration
+      RAG
+      Model evaluation
+      MLOps
+    Optimization
+      Mathematical optimization
+      Decision support
+      Fleet optimization
+    Data & Backend
+      Data-intensive systems
+      Scalable APIs
+    Sustainability
+      Energy efficiency
+      Lower carbon footprint
 ```
 
----
+## Education
 
-## 🌟 Academic Experience
+- **BSc in Computer Science** — University of Havana
+- **Architecture and Development of Applications with LLMs** — University of Havana
+- **Introduction to Data Science** — Complutense University of Madrid
 
-- 👨‍🏫 **Teaching Assistant** - Programming and Database Management Systems
-- 🎓 **Advanced Courses**: Bilevel Optimization, Data Science, LLM and Chatbot Applications, Machine Learning
-- 🔬 **Research**: Bilevel optimization and Nash equilibrium applied to eco-park water supply management
+## Connect
 
----
-
-## 📫 Let's Connect!
-
-<p align="center">
-  <a href="mailto:franciscosuarezbellon@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://github.com/FVSB">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-</p>
-
----
-
-<div align="center">
-  <i>"Optimization is not just about finding the best solution, but understanding the problem in all its complexity"</i>
-  
-  **Thanks for visiting my profile! 🚀**
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-FVSB-181717?style=for-the-badge&logo=github)](https://github.com/FVSB)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-FVSB-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fvsb)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:franciscosuarezbellon@gmail.com)
