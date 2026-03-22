@@ -5,7 +5,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/FVSB?style=social)](https://github.com/FVSB)
 [![GitHub stars](https://img.shields.io/github/stars/FVSB?style=social)](https://github.com/FVSB)
 
-**🎓 BSc. Computer Science | 🔬 Optimization Researcher | 💻 Full-Stack Developer**
+**🎓 BSc. Computer Science | 🔬 Optimization Researcher | 💻 AI-Engineer**
 
 </div>
 
